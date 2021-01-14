@@ -110,3 +110,17 @@ Please see this [issue](https://savannah.gnu.org/bugs/?56994).
 ## Acknowledgements
 
 Some of these files are derived from the original [Nano](https://www.nano-editor.org) editor [repo](https://git.savannah.gnu.org/cgit/nano.git)
+
+### How to use Nano(V.4.0) instead of the default 2.0 on MacOS
+
+1. curl -O  https://www.nano-editor.org/dist/v4/nano-4.3.tar.gz
+2. tar xvzf nano-4.3.tar.gz
+3. cd nano-4.3
+4. ./configure
+5. make
+6. make install
+7. You’ll also need to add the following line to your .zshrc or .bash_profile to make sure you use this rather than the preinstalled, old version: 
+   alias nano='/usr/local/bin/nano'
+
+## Note: If you do not use the V4.0 instead on MacOS. The syntax highlighting will not work because of unidentified syntax. 
+
